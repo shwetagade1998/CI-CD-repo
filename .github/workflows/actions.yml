@@ -6,13 +6,13 @@ on :
     branches: main
 jobs:
   greet:
-   runs-on: ubantu-latest
-   steps:
-   - name: Hello to everyone
-     run: echo "doing well"
+    runs-on: ubantu-latest
+    steps:
+     - name: Hello to everyone
+       run: echo "doing well"
     
   nginx:
-   runs-on: ubantu-latest
-   steps:
-    - name: good night
-      run: echo "Hello"
+     runs-on: ubantu-latest
+     steps:
+       - name: good night
+         run: echo "Hello"
