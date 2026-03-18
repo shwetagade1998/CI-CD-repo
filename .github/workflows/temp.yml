@@ -1,7 +1,7 @@
  name: newpipeline
 
  on:
-   workflow-dispatch:
+   workflow_dispatch:
 
  jobs:
    code:
