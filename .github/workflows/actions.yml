@@ -1,18 +1,14 @@
----
-name: CI/CD
+name: cicd
 
-on :
-  push :
-    branches: main
+on:
+  push:
+    branches: [main]
+
 jobs:
-  greet:
-    runs-on: ubantu-latest
+  compile:
+    runs-on: ubuntu-latest
     steps:
-     - name: Hello to everyone
-       run: echo "doing well"
-    
-  nginx:
-     runs-on: ubantu-latest
-     steps:
-       - name: good night
-         run: echo "Hello"
+      - name: hello everyone
+        run: echo "good afternoon"
+      - name: hope you are well
+        run: echo "i am very well"
