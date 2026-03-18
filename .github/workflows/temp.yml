@@ -1,0 +1,27 @@
+ name: newpipeline
+
+ on:
+   workflow-dispatch:
+
+ jobs:
+   code:
+     runs-on: ubantu-latest
+     steps: 
+       - name: code checkout
+         run: echo " creating the code"
+   build:
+     runs-on: ubantu-latest
+     steps:
+       - name: building the docker
+         run: echo "building the code"
+   test:
+     runs-on: ubantu-latest
+     steps:
+       - name : testing for the container
+         run: echo "testing of the code"
+
+   deploy:
+      runs-on: ubantu-latest
+      steps:
+        - name: deploying the app
+          run: echo "deployment done"
