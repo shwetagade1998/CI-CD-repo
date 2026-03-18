@@ -12,3 +12,8 @@ jobs:
         run: echo "good afternoon"
       - name: hope you are well
         run: echo "i am very well"
+  done:
+    runs-on: ubuntu-latest
+    steps:
+      - name: docker version
+        run: docker --version
